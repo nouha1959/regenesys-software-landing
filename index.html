@@ -5,10 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Regenesys Software — LinkHand | One connected chart ecosystem for care teams</title>
 <!-- Regenesys Software landing page — live on GitHub Pages.
-     Built Nov 11, 2026 at Nicole's direction: all Regenesys Software campaign
-     traffic feeds into regenesyssoftware.com. Product: LinkHand, described in
-     Nicole's own words (Nov 8 + Nov 11, 2026 dictations). In development:
-     nothing to buy, license, or use yet — no pricing, no launch dates. -->
+     Rebuilt Nov 11, 2026 in the full tryregenesys.com layout at Nicole's
+     direction. Regenesys Software is the company; LinkHand is its first
+     healthcare product, described only in Nicole's own dictation wording
+     (Nov 8 + Nov 11, 2026). LinkHand is in development: nothing to buy,
+     license, or use yet — no pricing, no launch dates. The two forms below
+     post to FormSubmit (ndabish@gmail.com); answers are never written to
+     GitHub. -->
 <style>
   body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:0 auto;padding:24px;line-height:1.55;color:#1a1a1a}
   h1{font-size:2rem;line-height:1.2} h2{margin-top:2rem}
@@ -17,36 +20,191 @@
   .btn.secondary{background:#fff;color:#0b6b4a;border:2px solid #0b6b4a}
   .note{background:#fff8e1;padding:16px;border-radius:8px}
   .dream{background:#eef6f1;border:2px dashed #0b6b4a;padding:20px;border-radius:12px;margin-top:2rem}
+  /* Tabs */
+  .tabs{margin-top:2rem}
+  .tabbar{display:flex;gap:8px;border-bottom:3px solid #0b6b4a}
+  .tabbtn{flex:1;background:#e7e7e7;border:none;border-radius:10px 10px 0 0;padding:14px 10px;font-size:1.05rem;font-weight:700;cursor:pointer;color:#333}
+  .tabbtn.active{background:#0b6b4a;color:#fff}
+  .tabbtn small{display:block;font-weight:400;font-size:.8rem}
+  .panel{border:2px solid #0b6b4a;border-top:none;padding:20px;border-radius:0 0 12px 12px}
+  .panel[hidden]{display:none}
+  iframe{width:100%;border:none;border-radius:8px;background:#fff}
+  footer{margin-top:2rem;font-size:.9rem;color:#555}
+  /* Forms */
+  form label{display:block;font-weight:600;margin:16px 0 6px}
+  form input,form select,form textarea{width:100%;padding:10px;border:1.5px solid #0b6b4a;border-radius:8px;font:inherit;box-sizing:border-box;background:#fff}
+  form textarea{min-height:90px}
+  form button[type=submit]{margin-top:18px;cursor:pointer;border:none;font:inherit}
+  .formmsg{margin-top:16px;padding:12px 16px;border-radius:8px;display:none}
+  .formmsg.ok{display:block;background:#eef6f1}
+  .formmsg.err{display:block;background:#fdecea}
 </style>
 </head>
 <body>
-  <p class="note"><strong>Analytics notice:</strong> We record anonymous visit analytics for regenesyssoftware.com in real time — pages viewed and where visitors arrive from — so we can learn what people find useful and improve what we're building. No names or personal details are collected on this page.</p>
+<p class="note"><strong>Analytics notice:</strong> We record anonymous visit analytics for regenesyssoftware.com in real time — pages viewed and where visitors arrive from — so we can learn what people find useful and improve what we're building. No names or personal details are collected on this page.</p>
 
-  <div class="hero">
-    <h1>Regenesys Software 🌿</h1>
-    <p><strong>Introducing LinkHand — one connected chart ecosystem for care teams.</strong></p>
-    <p>Regenesys Software is a software development company introducing LinkHand, a business-to-business, all-in-one unified chart ecosystem: top-tier proprietary enterprise software that combines all of a patient's doctors' charts into one ecosystem, letting clinicians evaluate a patient thoroughly through a personalized 360-degree clinical system in a single interface.</p>
-    <p>
-      <a class="btn" href="https://www.instagram.com/regenesyssoftware/">Follow on Instagram</a>
-      <a class="btn secondary" href="https://www.threads.com/@regenesyssoftware">Follow on Threads</a>
-    </p>
+<section class="hero">
+  <h1>Regenesys Software 🌿</h1>
+  <p><strong>Introducing LinkHand — one connected chart ecosystem for care teams.</strong></p>
+  <p>Regenesys Software is a software development company introducing LinkHand, a business-to-business, all-in-one unified chart ecosystem: top-tier proprietary enterprise software that combines all of a patient's doctors' charts into one ecosystem, letting clinicians evaluate a patient thoroughly through a personalized 360-degree clinical system in a single interface.</p>
+  <p><strong>LinkHand is in development — nothing available to buy, license, or use yet.</strong> Follow the build, join the interest list, and help shape it below.</p>
+  <a class="btn" href="https://www.instagram.com/regenesyssoftware/">Follow on Instagram</a>
+  <a class="btn secondary" href="https://www.threads.com/@regenesyssoftware">Follow on Threads</a>
+</section>
+
+<h2>Sound familiar?</h2>
+<ul>
+  <li>One patient's story scattered across systems, portals, and faxes</li>
+  <li>Hours spent chasing records instead of caring for people</li>
+  <li>Handoffs where key information quietly goes missing</li>
+  <li>Duplicate tests ordered because the original results never arrived</li>
+  <li>After-hours charting just to catch up</li>
+</ul>
+
+<h2>We're building it differently</h2>
+<ul>
+  <li>One connected chart ecosystem — all of a patient's doctors' charts in one place</li>
+  <li>Outside doctors, hospitals, and institutions can drag and drop files in for handoff</li>
+  <li>Whichever clinician is in front of the patient has the fullest picture</li>
+  <li>Providers working together cohesively — aiming to make the work easier, faster, and cheaper</li>
+  <li>Built for every patient — adults of all ages, backgrounds, and sizes — because every patient's full picture matters, and good care starts wherever a person is in life</li>
+</ul>
+
+<h2>How LinkHand works — in brief</h2>
+<p>Another doctor, hospital, or institution wishing to participate in a patient's health care can easily upload their files — drag and drop — into the temporary setup of the clinician's dashboard for handoff. That gives the current clinician as much available information as possible about their patient, so there are no mix-ups. All of the information for a single patient lives on a single dashboard, so the clinician in front of that patient can evaluate them thoroughly — and providers can work together instead of working around missing records.</p>
+
+<section class="dream">
+  <h2 style="margin-top:0">What would YOUR dream chart system do?</h2>
+  <p>That's not a slogan — we actually want your answer, from people who work in care. There's a questionnaire for it in Tab 2 below. What you write helps decide what LinkHand becomes.</p>
+  <a class="btn" href="#signup" onclick="showTab('questionnaire')">Answer it in the questionnaire ↓</a>
+</section>
+
+<h2>How pre-launch works</h2>
+<ol>
+  <li>Join the interest list (Tab 1 below)</li>
+  <li>Help design it — clinician questionnaire (Tab 2 below)</li>
+  <li>Updates as LinkHand is built</li>
+  <li>Early access for pilot practices when ready</li>
+</ol>
+
+<!-- ============ SIGNUP TABS ============ -->
+<section class="tabs" id="signup">
+  <div class="tabbar" role="tablist">
+    <button class="tabbtn active" id="tabbtn-waitlist" onclick="showTab('waitlist')">Join the interest list<small>For care teams — email updates</small></button>
+    <button class="tabbtn" id="tabbtn-questionnaire" onclick="showTab('questionnaire')">Clinician questionnaire<small>Optional — about 3 minutes</small></button>
   </div>
 
-  <h2>How LinkHand works — in brief</h2>
-  <p>Another doctor, hospital, or institution wishing to participate in a patient's health care can easily upload their files — drag and drop — into the temporary setup of the clinician's dashboard for handoff. That gives the current clinician as much available information as possible about their patient, and the latest tools, so there are no mix-ups — and it gives the patient an edge, so they are truly receiving the best and latest health care available.</p>
-  <p>LinkHand aims to make all doctors, hospitals, and institutions work together cohesively by sharing information — making their jobs exponentially easier, faster, and cheaper, and saving the time spent getting records and outsourcing tests, labs, and more. Because the vast information for a single patient is now on a single dashboard, it helps prescribers — and it exponentially helps the patient.</p>
+  <div class="panel" id="panel-waitlist" role="tabpanel">
+    <h2 style="margin-top:0">Join the LinkHand interest list</h2>
+    <p>For clinicians, practice owners, and care teams who want email updates as LinkHand is built.</p>
+    <form id="form-interest">
+      <label for="il-name">Name</label>
+      <input type="text" id="il-name" name="Name" autocomplete="name">
 
-  <div class="dream">
-    <h2>Built with clinicians, for clinicians</h2>
-    <p>LinkHand is in development, and it is being shaped with the people who will use it. If you work in care, follow along and tell us: what's the most frustrating part of pulling together a patient's information today — and what would your dream system do instead?</p>
-    <p>
-      <a class="btn" href="https://www.instagram.com/regenesyssoftware/">Join the conversation on Instagram</a>
-      <a class="btn secondary" href="https://www.threads.com/@regenesyssoftware">Join on Threads</a>
-    </p>
+      <label for="il-email">Work email (required)</label>
+      <input type="email" id="il-email" name="Work email" autocomplete="email" required>
+
+      <label for="il-role">Role</label>
+      <select id="il-role" name="Role">
+        <option value="clinician">Clinician</option>
+        <option value="practice manager">Practice manager</option>
+        <option value="administrator">Administrator</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="il-org">Organization type (optional)</label>
+      <input type="text" id="il-org" name="Organization type">
+
+      <p>We'll only email you about LinkHand's progress. No spam.</p>
+      <button type="submit" class="btn">Join the interest list</button>
+      <div class="formmsg" id="msg-interest" role="status"></div>
+    </form>
+    <p><strong>Have 3 minutes?</strong> Switch to the <a href="#signup" onclick="showTab('questionnaire')">Clinician questionnaire tab</a> above and tell us what your dream chart system would do — joining the list does not require it.</p>
   </div>
 
-  <p class="note"><strong>Where things stand:</strong> LinkHand is in development. There is nothing available to buy, license, or use yet — no pricing and no launch date announced. When that changes, it will be announced on the profiles first.</p>
+  <div class="panel" id="panel-questionnaire" role="tabpanel" hidden>
+    <h2 style="margin-top:0">Clinician questionnaire — help us build LinkHand (optional)</h2>
+    <p>LinkHand is in development. Your answers are used for product research and may be reported only as anonymized totals. Please don't share patient details or medical information.</p>
+    <form id="form-questionnaire">
+      <label for="q1">1. What's the most frustrating part of pulling together a patient's information today?</label>
+      <textarea id="q1" name="Q1 - Most frustrating part of pulling together a patient's information"></textarea>
 
-  <p>Regenesys Software — one connected chart ecosystem for care teams, in development.</p>
+      <label for="q2">2. Where do handoffs most often break down for your team?</label>
+      <textarea id="q2" name="Q2 - Where handoffs break down"></textarea>
+
+      <label for="q3">3. How much of your week goes to chasing records, faxes, and portals?</label>
+      <select id="q3" name="Q3 - Weekly time chasing records, faxes, and portals">
+        <option value="less than 1 hour">Less than 1 hour</option>
+        <option value="1-3 hours">1–3 hours</option>
+        <option value="3-5 hours">3–5 hours</option>
+        <option value="5+ hours">5+ hours</option>
+      </select>
+
+      <label for="q4">4. What would your dream chart system do instead?</label>
+      <textarea id="q4" name="Q4 - Dream chart system"></textarea>
+
+      <label for="q5">5. What does "connected" mean to you — what should it actually do?</label>
+      <textarea id="q5" name="Q5 - What connected should mean"></textarea>
+
+      <label for="q6">6. What would make you trust a new system with your patients' information?</label>
+      <textarea id="q6" name="Q6 - What builds trust in a new system"></textarea>
+
+      <label for="q7">7. Anything else LinkHand should include?</label>
+      <textarea id="q7" name="Q7 - Anything else LinkHand should include"></textarea>
+
+      <label for="q8">8. Work email (optional) — if you're happy for us to follow up</label>
+      <input type="email" id="q8" name="Work email (optional follow-up)">
+
+      <button type="submit" class="btn">Send my answers</button>
+      <div class="formmsg" id="msg-questionnaire" role="status"></div>
+    </form>
+  </div>
+</section>
+
+<script>
+function showTab(name){
+  document.getElementById('panel-waitlist').hidden = name !== 'waitlist';
+  document.getElementById('panel-questionnaire').hidden = name !== 'questionnaire';
+  document.getElementById('tabbtn-waitlist').classList.toggle('active', name === 'waitlist');
+  document.getElementById('tabbtn-questionnaire').classList.toggle('active', name === 'questionnaire');
+}
+
+function wireForm(formId, msgId, subject){
+  var form = document.getElementById(formId);
+  var msg = document.getElementById(msgId);
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var data = {};
+    new FormData(form).forEach(function(value, key){ data[key] = value; });
+    data['_subject'] = subject;
+    data['_template'] = 'table';
+    data['_captcha'] = 'false';
+    data['_honey'] = '';
+    fetch('https://formsubmit.co/ajax/ndabish@gmail.com', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+      body: JSON.stringify(data)
+    }).then(function(res){
+      if (res.ok) {
+        msg.textContent = "Thank you — we'll be in touch as LinkHand is built.";
+        msg.className = 'formmsg ok';
+        form.reset();
+      } else {
+        msg.textContent = 'Something went wrong — please try again, or reach us on Instagram @regenesyssoftware.';
+        msg.className = 'formmsg err';
+      }
+    }).catch(function(){
+      msg.textContent = 'Something went wrong — please try again, or reach us on Instagram @regenesyssoftware.';
+      msg.className = 'formmsg err';
+    });
+  });
+}
+wireForm('form-interest', 'msg-interest', 'LinkHand interest list');
+wireForm('form-questionnaire', 'msg-questionnaire', 'LinkHand clinician questionnaire');
+</script>
+
+<footer>
+  <p>Regenesys Software — a software development company. LinkHand is in development: nothing is available to buy, license, or use yet, and no launch date is promised.</p>
+</footer>
 </body>
 </html>
